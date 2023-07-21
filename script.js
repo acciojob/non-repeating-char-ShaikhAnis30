@@ -1,5 +1,7 @@
 //your JS code here. If required.
-let obj = {};
+function firstNonRepeatingCharacter(str) {
+  // let map = [];
+  let obj = {};
   for (let i = 0; i < str.length; i++) {
     const char = str[i];
     if(!obj[char]) {
@@ -16,3 +18,4 @@ let obj = {};
     if(obj[char] === 1) return char;
   }
   return '$';
+}
